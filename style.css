@@ -1,0 +1,251 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+.containt {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0rem;
+}
+.product {
+  width: 40%;
+}
+.product h1 {
+  font-size: 2.6rem;
+  font-weight: 900;
+}
+.product p {
+  font-size: 1rem;
+}
+.stars {
+  margin: 1rem;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.reviews i,
+.report-guru i,
+.best-tech i {
+  color: hsl(51, 92%, 67%);
+  padding-top: 0.8rem;
+}
+.reviews,
+.report-guru,
+.best-tech {
+  background-color: hsl(300, 9%, 90%);
+  max-width: 20rem;
+  margin: 1rem;
+  border-radius: 10px;
+  padding: 1px;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.reviews {
+  position: relative;
+  right: 4rem;
+}
+.report-guru {
+  position: relative;
+  right: 2rem;
+}
+.reviews p,
+.report-guru p,
+.best-tech p {
+  font-size: 0.8rem;
+  padding-left: 1rem;
+}
+.comment {
+  position: relative;
+  display: inline-block;
+}
+.comment-section {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  width: 15rem;
+  height: 11rem;
+  display: inline-block;
+}
+#comment2 {
+  position: relative;
+  top: 1rem;
+}
+#comment3 {
+  position: relative;
+  top: 2rem;
+}
+.comment-section img {
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.comment_box {
+  display: flex;
+  align-content: flex-start;
+}
+.commenter_name {
+  display: inline-block;
+}
+.verified_review {
+  color: hsl(333, 80%, 67%);
+}
+.review-point {
+  text-align: center;
+  font-size: 0.7rem;
+}
+/* ----big tab1 design---- */
+@media screen and (min-width: 849px) and (max-width: 1199px) {
+  .comment {
+    display: flex;
+    flex-direction: row;
+  }
+  .comment-section {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    width: 22rem;
+    height: 12rem;
+  }
+  .review-point {
+    font-size: 0.8rem;
+  }
+  .commenter_name {
+    font-size: 0.7rem;
+  }
+  .product h1 {
+    font-size: 2.2rem;
+  }
+  .product p {
+    font-size: 0.9rem;
+  }
+  .reviews p,
+  .report-guru p,
+  .best-tech p {
+    font-size: 0.6rem;
+  }
+  .reviews i,
+  .report-guru i,
+  .best-tech i {
+    color: hsl(51, 92%, 67%);
+    padding-top: 0.5rem;
+  }
+}
+/* ----big tab2 design---- */
+@media screen and (min-width: 700px) and (max-width: 850px) {
+  .comment {
+    display: flex;
+    flex-direction: row;
+  }
+  .product h1 {
+    font-size: 1.7rem;
+  }
+  .product p {
+    font-size: 0.6rem;
+  }
+  .reviews p,
+  .report-guru p,
+  .best-tech p {
+    font-size: 0.5rem;
+    padding-left: 0.1rem;
+  }
+  .reviews,
+  .report-guru,
+  .best-tech {
+    padding-right: 0.2rem;
+  }
+  .reviews i,
+  .report-guru i,
+  .best-tech i {
+    color: hsl(51, 92%, 67%);
+    padding-top: 0.4rem;
+  }
+  .comment-section img {
+    width: 35px;
+    height: 35px;
+  }
+  .commenter_name {
+    font-size: 0.5rem;
+  }
+  .review-point {
+    font-size: 0.55rem;
+  }
+}
+
+/* ----mobile Design---- */
+@media screen and (min-width: 375px) and (max-width: 699px) {
+  .social {
+    flex-direction: column;
+  }
+  .containt {
+    flex-direction: column;
+    align-content: center;
+  }
+  .product {
+    width: 100%;
+  }
+  .product h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .product p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .stars {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0rem;
+    padding: 0px;
+  }
+  .reviews,
+  .report-guru,
+  .best-tech {
+    max-width: 20rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px;
+  }
+  .reviews p,
+  .report-guru p,
+  .best-tech p {
+    font-size: 0.6rem;
+    padding-right: 1rem;
+  }
+  .report-guru,
+  .reviews {
+    left: 0rem;
+  }
+  .review-point {
+    text-align: left;
+  }
+  .reviews i,
+  .report-guru i,
+  .best-tech i {
+    color: hsl(51, 92%, 67%);
+    padding-top: 0.4rem;
+  }
+  .comment-section img {
+    width: 40px;
+    height: 40px;
+  }
+  .commenter_name {
+    font-size: 0.6rem;
+  }
+  .review-point {
+    font-size: 0.8rem;
+  }
+}
