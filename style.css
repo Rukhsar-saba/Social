@@ -11,24 +11,26 @@ body {
 .containt {
   display: flex;
   justify-content: space-evenly;
-  padding-left: 14rem;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
 }
 .product {
-  width: 40%;
+  width: 30%;
 }
 .product h1 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-weight: 900;
 }
 .product p {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 .stars {
   margin: 1rem;
   padding: 18px;
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 40%;
   margin-left: 9rem;
 }
 .reviews i,
@@ -74,7 +76,7 @@ body {
   padding: 20px;
   margin: 10px;
   width: 15rem;
-  height: 11rem;
+  height: 10rem;
   display: inline-block;
 }
 #comment2 {
@@ -109,12 +111,12 @@ body {
 /* ----big tab1 design---- */
 @media screen and (min-width: 849px) and (max-width: 1000px) {
   .containt {
-    padding-left: 6rem;
+    width: 86%;
   }
   .comment {
     display: flex;
     flex-direction: row;
-    background-color: wheat;
+    align-content: center;
   }
   .comment-section {
     border-radius: 20px;
@@ -148,20 +150,22 @@ body {
   }
 }
 /* ----big tab2 design---- */
-@media screen and (min-width: 500px) and (max-width: 850px) {
-  .containt {
-    padding-left: 6rem;
-  }
+@media screen and (min-width: 650px) and (max-width: 850px) {
   .comment {
     display: flex;
     flex-direction: row;
-    background-color: teal;
   }
   .product h1 {
     font-size: 1.7rem;
   }
   .product p {
     font-size: 0.6rem;
+  }
+  .stars {
+    margin: 1rem;
+    padding: 18px;
+    width: 50%;
+    margin-left: 9rem;
   }
   .reviews p,
   .report-guru p,
@@ -201,7 +205,7 @@ body {
 }
 
 /* ----mobile Design---- */
-@media screen and (min-width: 375px) and (max-width: 499px) {
+@media screen and (min-width: 375px) and (max-width: 649px) {
   .social {
     flex-direction: column;
   }
@@ -222,10 +226,9 @@ body {
   }
   .stars {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0rem;
-    padding: 0px;
+    align-content: center;
+    width: 90%;
+    margin-left: -1rem;
   }
   .reviews,
   .report-guru,
@@ -254,6 +257,9 @@ body {
   .best-tech i {
     color: hsl(51, 92%, 67%);
     padding-top: 0.4rem;
+  }
+  .comment-section {
+    margin-left: 5rem;
   }
   .comment-section img {
     width: 40px;
