@@ -112,7 +112,6 @@ body {
 @media screen and (min-width: 950px) and (max-width: 1000px) {
   .containt {
     width: 86%;
-    background-color: khaki;
   }
   .comment {
     display: flex;
@@ -155,7 +154,6 @@ body {
   .comment {
     display: flex;
     flex-direction: row;
-    background-color: hsl(333, 80%, 67%);
   }
   .product h1 {
     font-size: 1.7rem;
