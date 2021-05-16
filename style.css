@@ -109,9 +109,10 @@ body {
   font-size: 0.7rem;
 }
 /* ----big tab1 design---- */
-@media screen and (min-width: 849px) and (max-width: 1000px) {
+@media screen and (min-width: 950px) and (max-width: 1000px) {
   .containt {
     width: 86%;
+    background-color: khaki;
   }
   .comment {
     display: flex;
@@ -150,10 +151,11 @@ body {
   }
 }
 /* ----big tab2 design---- */
-@media screen and (min-width: 650px) and (max-width: 850px) {
+@media screen and (min-width: 650px) and (max-width: 949px) {
   .comment {
     display: flex;
     flex-direction: row;
+    background-color: hsl(333, 80%, 67%);
   }
   .product h1 {
     font-size: 1.7rem;
@@ -177,6 +179,7 @@ body {
   .report-guru,
   .best-tech {
     padding-right: 0.2rem;
+    width: 100%;
   }
   .reviews i,
   .report-guru i,
