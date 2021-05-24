@@ -1,35 +1,34 @@
-body {
-  font-family: "Poppins", sans-serif;
+.body {
+  font-family: "Spartan", sans-serif;
 }
-.social {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.container {
+  background-color: orangered;
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.containt {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 70%;
+.product-description h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.product-description p {
+  font-size: 0.8rem;
 }
 .product {
-  width: 30%;
-}
-.product h1 {
-  font-size: 2.4rem;
-  font-weight: 900;
-}
-.product p {
-  font-size: 0.6rem;
-}
-.stars {
-  margin: 1rem;
-  padding: 18px;
+  height: 16rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  background-color: gold;
+}
+.product-description {
+  width: 35%;
+  padding: 1rem;
+}
+.rating {
   width: 40%;
-  margin-left: 9rem;
+  padding-top: 2rem;
 }
 .reviews i,
 .report-guru i,
@@ -41,13 +40,11 @@ body {
 .report-guru,
 .best-tech {
   background-color: hsl(300, 9%, 90%);
-  max-width: 20rem;
-  margin: 1rem;
   border-radius: 10px;
-  padding: 1px;
-  padding-right: 2rem;
+  margin: 1rem;
+  text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .reviews {
   position: relative;
@@ -61,11 +58,12 @@ body {
 .report-guru p,
 .best-tech p {
   font-size: 0.8rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 .comment {
-  position: relative;
-  display: inline-block;
+  background-color: palegreen;
+  display: flex;
+  justify-content: space-between;
 }
 .comment-section {
   background-color: hsl(300, 43%, 22%);
@@ -73,8 +71,8 @@ body {
   border-radius: 20px;
   padding: 20px;
   margin: 10px;
-  width: 15rem;
-  height: 10rem;
+  width: 18rem;
+  height: 12rem;
   display: inline-block;
 }
 #comment2 {
@@ -98,176 +96,174 @@ body {
 }
 .commenter_name {
   display: inline-block;
+  padding-bottom: 15px;
 }
 .verified_review {
   color: hsl(333, 80%, 67%);
 }
 .review-point {
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
-/* ----big tab1 design---- */
-@media screen and (min-width: 950px) and (max-width: 1000px) {
-  .containt {
-    width: 86%;
+/* tab1 Design */
+@media screen and (min-width: 925px) and (max-width: 1069px) {
+  .product h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
   }
-  .comment {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
+  .product p {
+    font-size: 0.8rem;
+  }
+  .product-description {
+    width: 46%;
+  }
+  .reviews,
+  .report-guru,
+  .best-tech {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+  .reviews p,
+  .report-guru p,
+  .best-tech p {
+    font-size: 0.7rem;
+    padding-left: 1rem;
+  }
+  .reviews i,
+  .report-guru i,
+  .best-tech i {
+    padding-top: 0.6rem;
+  }
+  .comment-section {
+    width: 16rem;
+    height: 8rem;
+  }
+  .comment-section img {
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    /* margin-top: 6px; */
+  }
+  .commenter_name {
+    font-size: 0.8rem;
+  }
+  .review-point {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+}
+/* tab2 design */
+@media screen and (min-width: 650px) and (max-width: 924px) {
+  .product h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: green;
+  }
+  .product p {
+    font-size: 0.7rem;
+    height: auto;
+  }
+  .rating {
+    width: 45%;
+  }
+  .product-description {
+    width: 42%;
+  }
+  .reviews,
+  .report-guru,
+  .best-tech {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+  .reviews p,
+  .report-guru p,
+  .best-tech p {
+    font-size: 0.6rem;
+    padding-left: 0.5rem;
+  }
+  .reviews i,
+  .report-guru i,
+  .best-tech i {
+    padding-top: 0.6rem;
   }
   .comment-section {
     border-radius: 20px;
     padding: 10px;
     margin: 5px;
+    width: 13rem;
+    height: 7rem;
+  }
+  .comment-section img {
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    margin-top: 6px;
+  }
+  .commenter_name {
+    font-size: 0.5rem;
+  }
+  .review-point {
+    font-size: 0.6rem;
+  }
+}
+/* mobile design */
+@media screen and (min-width: 375px) and (max-width: 649px) {
+  .container {
+    width: 70%;
+    height: auto;
+    position: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .product {
+    flex-direction: column;
+    align-content: center;
+  }
+  .product-description {
+    width: 90%;
+    text-align: center;
+  }
+  .product-description h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  .product-description p {
+    font-size: 0.8rem;
+  }
+  .rating {
+    width: 100%;
+    padding-top: 0.2em;
+  }
+  .reviews {
+    right: 0rem;
+  }
+  .report-guru {
+    right: 0rem;
+  }
+  .reviews,
+  .report-guru,
+  .best-tech {
+    margin: 1rem;
+  }
+  .reviews p,
+  .report-guru p,
+  .best-tech p {
+    padding-left: 1rem;
+  }
+  .comment {
+    position: center;
+    display: block;
+    height: auto;
+    margin-top: 7rem;
+    background-color: orangered;
+  }
+  .comment-section {
+    margin-left: 4.5rem;
     width: 15rem;
     height: 9rem;
   }
   .review-point {
-    font-size: 0.6rem;
-  }
-  .commenter_name {
     font-size: 0.7rem;
-  }
-  .product h1 {
-    font-size: 2.2rem;
-  }
-  .product p {
-    font-size: 0.9rem;
-  }
-  .reviews p,
-  .report-guru p,
-  .best-tech p {
-    font-size: 0.6rem;
-  }
-  .reviews i,
-  .report-guru i,
-  .best-tech i {
-    color: hsl(51, 92%, 67%);
-    padding-top: 0.5rem;
-  }
-}
-/* ----big tab2 design---- */
-@media screen and (min-width: 650px) and (max-width: 949px) {
-  .comment {
-    display: flex;
-    flex-direction: row;
-  }
-  .product h1 {
-    font-size: 1.7rem;
-  }
-  .product p {
-    font-size: 0.6rem;
-  }
-  .stars {
-    margin: 1rem;
-    padding: 18px;
-    width: 50%;
-    margin-left: 9rem;
-  }
-  .reviews p,
-  .report-guru p,
-  .best-tech p {
-    font-size: 0.5rem;
-    padding-left: 0.1rem;
-  }
-  .reviews,
-  .report-guru,
-  .best-tech {
-    padding-right: 0.2rem;
-    width: 100%;
-  }
-  .reviews i,
-  .report-guru i,
-  .best-tech i {
-    color: hsl(51, 92%, 67%);
-    padding-top: 0.4rem;
-  }
-  .comment-section {
-    border-radius: 20px;
-    padding: 10px;
-    margin: 5px;
-    width: 10rem;
-    height: 7rem;
-  }
-  .comment-section img {
-    width: 35px;
-    height: 35px;
-  }
-  .commenter_name {
-    font-size: 0.5rem;
-  }
-
-  .review-point {
-    font-size: 0.55rem;
-  }
-}
-
-/* ----mobile Design---- */
-@media screen and (min-width: 375px) and (max-width: 649px) {
-  .social {
-    flex-direction: column;
-  }
-  .containt {
-    flex-direction: column;
-    align-content: center;
-  }
-  .product {
-    width: 100%;
-  }
-  .product h1 {
-    text-align: center;
-    font-size: 2rem;
-  }
-  .product p {
-    font-size: 0.9rem;
-    text-align: center;
-  }
-  .stars {
-    display: flex;
-    align-content: center;
-    width: 90%;
-    margin-left: -1rem;
-  }
-  .reviews,
-  .report-guru,
-  .best-tech {
-    max-width: 20rem;
-    margin: 0.5rem;
-    border-radius: 10px;
-    text-align: center;
-    padding: 0px;
-  }
-  .reviews p,
-  .report-guru p,
-  .best-tech p {
-    font-size: 0.6rem;
-    padding-right: 1rem;
-  }
-  .report-guru,
-  .reviews {
-    left: 0rem;
-  }
-  .review-point {
-    text-align: left;
-  }
-  .reviews i,
-  .report-guru i,
-  .best-tech i {
-    color: hsl(51, 92%, 67%);
-    padding-top: 0.4rem;
-  }
-  .comment-section {
-    margin-left: 5rem;
-  }
-  .comment-section img {
-    width: 40px;
-    height: 40px;
-  }
-  .commenter_name {
-    font-size: 0.6rem;
-  }
-  .review-point {
-    font-size: 0.8rem;
   }
 }
